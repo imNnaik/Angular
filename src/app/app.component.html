@@ -1,0 +1,4 @@
+<div fxLayout="row" fxLayoutAlign="space-evenly center">
+	<button mat-raised-button *ngFor="let result of gender; let i = index" [ngClass]="(onClicking === i) ? 'activeColor': ''"
+(click)="onClick(i)">{{result.name}}</button>
+</div>
